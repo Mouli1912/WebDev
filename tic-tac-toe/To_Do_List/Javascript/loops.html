@@ -70,5 +70,16 @@ switch (new Date().getDay()) {
 document.getElementById("demo").innerHTML = "Today is " + day;
 </script>
 
+
+<script>
+let text4 = "";
+
+for (let i = 1; i < 10; i++) {
+  if (i === 3) { continue; }
+  text4 += i*10 + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text4;
+</script>
 </body>
 </html>
