@@ -89,5 +89,17 @@ let z = x + y;
 
 document.getElementById("demo").innerHTML = "The value of z is " + z;
 </script>
+<!-- Jump statements 
+ break the loop when the loop counter is three-->
+
+<script>
+let text5 = "";
+for (let i = 0; i < 10; i++) {
+  if (i === 3) { break; }
+  text5 += "The number is " + i + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text5;
+</script>
 </body>
 </html>
