@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>strings</title>
+</head>
+<body>
+    <h1>Javascript Strings</h1>
+    <p id = "demo"></p>
+
+    <script>
+        let carName1 = "Volvo XC60";
+        let carName2 = "Toyota Corolla";
+        document.getElementById("demo").innerHTML = carName1 + " " + carName2;
+    </script>
+
+    <script>
+        let answer1  = "it's alright";
+        let answer2 = "he is called 'Johnny'";
+        let answer3 = 'he is called "Jonhny"';
+        document.getElementById("demo").innerHTML = answer1 + "<br>" + answer2 + "<br>" + answer3;
+        </script>
+
+        <script>
+            let text = `he's often called "jonnhy"`;
+            document.getElementById("demo").innerHTML = text;
+        </script>
+
+       <script>
+        let text2 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+        document.getElementById("demo").innerHTML = text2.length;
+    </script>
+</body>
+</html>
