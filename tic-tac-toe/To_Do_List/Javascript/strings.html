@@ -23,8 +23,8 @@
         </script>
 
         <script>
-            let text = `he's often called "jonnhy"`;
-            document.getElementById("demo").innerHTML = text;
+            let templateText = `he's often called "jonnhy"`;
+            document.getElementById("demo").innerHTML = templateText;
         </script>
 
        <script>
@@ -32,5 +32,19 @@
 
         document.getElementById("demo").innerHTML = text2.length;
     </script>
+<script>
+    let text = "Hello World!";
+    let char = text.charAt(0);
+    document.getElementById("demo").innerHTML = text.charAt(0);
+    document.getElementById("demo").innerHTML = text.charCodeAt(0);
+    document.getElementById("demo").innerHTML = text.charPointAt(0);
+
+</script>
+
+<script>
+    const name = "w3schools";
+    let letter = name.at(2);
+    document.getElementById("demo").innerHTML =letter;
+</script>
 </body>
 </html>
