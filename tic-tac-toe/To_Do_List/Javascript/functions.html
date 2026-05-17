@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions</title>
+</head>
+<body>
+   <h2>JavaScript Functions</h2>
+    <p id = "demo"></p>
+    <script>
+        function myFunction(){
+            return "Hello world!;"
+
+        }
+let greeting = myFunction();
+        document.getElementById("demo").innerHTML =  greeting;
+    </script> 
+
+    <script>
+        function multiply(a,b){
+            return a * b;
+        }
+        let result = multiply(4,3);
+        document.getElementById("demo").innerHTML = result;
+    </script>
+
+    <script>
+        function toCelsius(fahrenheit){
+            return (5/9) * (fahrenheit - 32);
+        }
+        let text = "The temperature is " + toCelsius(77) + " Celsius";
+        document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+</html>
