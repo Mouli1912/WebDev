@@ -16,7 +16,7 @@
 let greeting = myFunction();
         document.getElementById("demo").innerHTML =  greeting;
     </script> 
-
+<!--Function paramters-->
     <script>
         function multiply(a,b){
             return a * b;
@@ -32,5 +32,68 @@ let greeting = myFunction();
         let text = "The temperature is " + toCelsius(77) + " Celsius";
         document.getElementById("demo").innerHTML = text;
     </script>
+
+    <!--Calling  a function many times-->
+    <script>
+       function myfunction(){
+        return "Hello world";
+
+       }
+       let a = myFunction();
+       let b = myFunction();
+       let c = myFunction();
+       
+    </script>
+<!--A function call by many names-->
+<script>
+    function myFuncion(){
+        return "Hello!";
+    }
+    function showHello(){
+        document.getElementById("demo").innerHTML = myFunction();
+    }
+    showHello();
+</script>
+
+<button onclick="showHello()">Click me </button>
+<script>
+    function sayHello(){
+        return "hello!";
+    }
+    function showHello(){
+        document.getElementById("demo").innerHTML = sayHello();
+    }
+    
+</script>
+<!--Function with one Parameters-->
+<script>
+    function sayHello(){
+        return "Hello" + name;
+
+    }
+    let greetings = sayHello("John");
+    document.gestElementById("demo").innerHTML =greeting;
+</script>
+<!--Function two parameters-->
+<script>
+    function myFunction(firstName, lastName){
+        return firstname + " " + lastName;
+    }
+
+    let name = fullName ("John", "doe");
+     document.getElementById("demo").innerHTML = "The name is" + name;
+</script>
+<!--Return statement-->
+<script>
+function myAge(){
+    if(age <18){
+        return "Too Young";
+    }
+    return "Access granted";
+}
+answer = checkAge(16);
+document.getElementById("demo").innerHTML =answer;
+</script>
+
 </body>
 </html>
