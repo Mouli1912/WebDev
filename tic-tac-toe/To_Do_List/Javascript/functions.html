@@ -95,5 +95,149 @@ answer = checkAge(16);
 document.getElementById("demo").innerHTML =answer;
 </script>
 
+<!--find the max number-->
+<script>
+    function findMax(){
+        let max = - Infinity;
+        for (let i = 0; i<arguments.length; i++){
+            if (arguments[i] > max ){
+                max = arguments[i];
+            }
+        }
+        return max;
+
+    }
+    document.getElementById("demo").innerHTML = findMax(4,5,6,7,8);
+</script>
+
+<!--find the sum of all numbers-->
+<script>
+    function findSum(){
+        let sum = 0;
+        for (let i = 0; i<arguments.length; i ++){
+            sum += arguments[i];
+        }
+        return sum;
+    }
+    document.getElementById("demo").innerHTML = findSum(1,2,3);
+</script>
+
+<!--The order of argument is important-->
+<script>
+    function subtract(a, b){
+        return a-b;
+       
+    }
+     let x1= subtract(10,5);
+     let x2= subtract(5,10);
+
+     document.getElementById("demo").innerHTML = "The result are " + x1 + "  and  " + x2;
+     </script>
+
+     <!--default parameters-->
+    <script>
+function myFunction(x, y) {
+  if (y === undefined) {
+    y = 2;
+  }  
+  return x * y;
+}
+document.getElementById("demo").innerHTML = myFunction(4);
+</script>
+    <script>
+function myFunction(x, y= 10) {
+ 
+  return x + y;
+}
+document.getElementById("demo").innerHTML = myFunction(5);
+</script>
+<!--rest (...)parameters The rest parameter (...) allows a function to treat an indefinite number of arguments as an array:-->
+<script>
+    function sum(...args){
+        let sum = 0;
+        for(let arg of args) sum += arg;
+        return sum ;
+    }
+    let x = sum(4, 9, 45, 23, 74, 124);
+document.getElementById("demo").innerHTML = x;
+</script>
+
+<!--Function expression-->
+<script>
+  const multiply = function(a,b){return a *b};
+
+  documnet.getElementById("demo").innerHTML = multiply;
+</script>
+
+<script>
+    const multiply = function(a,b){return a * b};
+    let z = multipy(4,3);
+
+    documnet.getElementById("demo").innerHTML = z;
+    </script>
+
+<script>
+    function run(fn){
+        return fn();
+    }
+
+    const sayHello = function(){
+        return "Hello";
+    };
+
+    run(sayHello);
+</script>
+   
+<script>
+    const sayHello = function(){
+        return "Hello World";
+    };
+
+    document.getElementById("demo").innerHTML=sayHello();
+</script>
+<!--Arrow functions-->
+
+<script>
+ const multiply = (a,b) => a *b;
+ let product = multiply(4,5);
+ document.getElementById("demo").innerHTML = "The product is:" + product;
+</script>
+
+<script>
+    const hello = ()=> "Hello world";
+
+    document.getElmentByID("demo").innerHTML = hello ();
+</script>
+
+<script>
+   const hii = function (){return"hii";}
+   document.getElementById("demo").innerHTML= hii();
+</script>
+<!--Arrow functions with one parenthesis-->
+<script>
+    const square = (x) => x*x;
+
+    document.getElementById("demo").innerHTML = "The square of 3 is" + square(3);
+</script>
+<!--Arrow functions without parenthesis-->
+<script>
+    const square2 = x => x * x;
+    documnet.getElementById("demo").innerHTML = "the square of 3 is " + square2(3);
+</script>
+<!--Arrow functions with parenthesis-->
+<script>
+    const hola  = (val) => "hola" + val;
+    document .geyELementById("demo").innerHTML = hola("Universe!");
+</script>
+<!--Arrow functions without parenthesis-->
+<script>
+    const hi = val=> "hi" + val;
+    document .geyELementById("demo").innerHTML = hola("Universe!");
+</script>
+
+<!--object-->
+<script>
+   
+</script>
 </body>
 </html>
