@@ -24,5 +24,74 @@
         //display data from the object:
         document.getElementById("demo").innerHTML="The car type is " + car.type;
     </script>
+
+    <script>
+        //create an object
+
+        const person ={firstName : "John" , lastName:"Doe", age:50, eyeColor:"bule"};
+
+        //Display the data from object
+        document.getElementById("demo").innerHTML = person.firstName + " is " + person.age + " years old. ";    </script>
+
+        <script>
+// Create an Object
+const person1 = new Object({
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue" 
+});
+
+// Diplay Object Content
+document.getElementById("demo").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+</script>
+        <script>
+// Create an Object
+const person12 = new Object({
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue", 
+  fullName:function(){
+    return this.firstName + " " + lastName;
+  }
+});
+
+// Diplay Object Content
+document.getElementById("demo").innerHTML =
+person.fulltName();
+</script>
+
+<script>
+    //changeing properties
+    const person2 = new Object({
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue", 
+  
+});
+person.age = 10;
+
+// Diplay Object Content
+document.getElementById("demo").innerHTML =
+person.firstName + " is " + person.age;
+</script>
+<script>
+    //adding a new object
+    const person3 = new Object({
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue", 
+  
+});
+person.nationality: "English";
+
+// Diplay Object Content
+document.getElementById("demo").innerHTML =
+person.firstName + " is " + person.nationality;
+</script>
 </body>
 </html>
