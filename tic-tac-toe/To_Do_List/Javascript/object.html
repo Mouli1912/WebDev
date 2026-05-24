@@ -139,5 +139,23 @@ document.getElementById("demo").innerHTML =
 "My father is " + myFather.age + "."; 
 </script>
 
+<script>
+  //create Target object
+
+  const person5 ={
+    firstName :"John",
+    lastName :"doe",
+    age : 50,
+    eyeColor : "blue"
+  };
+
+  //create source Object
+  const person6 ={firstName:"Anne", lastName:"Smith"};
+
+  Object.assign(person1, person2);
+
+  let Text = Object.entries(person5);
+  document.getElementById("demo").innerHTML = text;
+  </script>
 </body>
 </html>
