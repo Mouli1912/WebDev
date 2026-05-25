@@ -157,5 +157,23 @@ document.getElementById("demo").innerHTML =
   let Text = Object.entries(person5);
   document.getElementById("demo").innerHTML = text;
   </script>
+
+<script>
+  // Getters and setters
+
+
+const person ={
+  firstName:"john",
+  lastName:"DOe",
+  language:"en",
+  get lang (){
+    return this.language;
+  }
+
+};
+document.getElemntById("demo").innerHTML = person.lang;
+</script>
+
+
 </body>
 </html>
