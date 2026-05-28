@@ -8,6 +8,7 @@
 <body>
    <h2>JavaScript Functions</h2>
     <p id = "demo"></p>
+    <button id="myButton">The time is ?</button>
     <script>
         function myFunction(){
             return "Hello world!;"
@@ -235,9 +236,12 @@ document.getElementById("demo").innerHTML = x;
     document .geyELementById("demo").innerHTML = hola("Universe!");
 </script>
 
-<!--object-->
 <script>
-   
+   function displayDate(){
+
+    document.getElementById("demo").innerHTML = DDate ();
+   }
+   documnet.getElementById("myButton").addEventListener("click",displayDate);
 </script>
 </body>
 </html>

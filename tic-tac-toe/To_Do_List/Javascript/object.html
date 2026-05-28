@@ -211,15 +211,14 @@ document.getElementById("demo").innerHTML = person.lang;
 const person = {
   firstName: "John",
   lastName: "Doe",
-  language: "EN"
+  language: "EN" 
 };
 
-// Add a property
-Object.defineproperty(person,"year",{
-  value:"2008"
-})
-//Display the property
-document.getElementById("demo").innerHTML = person.year 
+// Change a Property
+Object.defineProperty(person, "language", {value:"NO"})
+
+// Display the Property
+document.getElementById("demo").innerHTML = person.language;
 </script>
 </body>
 </html>
