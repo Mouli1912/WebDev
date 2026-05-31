@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List </title>
+</head>
+<body>
+    <h1>To-Do List</h1>
+
+    <input id="task" placeholder="New Task" value="" >
+    <button onclick="addTask()">Add</button>
+    <ul id="list"></ul>
+    <button onclick="ClearAll()">Clear ALL</button>
+
+    <script>
+        //Create a task array
+        let task =[];
+        // Function to  display task
+        function displayTasks(){
+            let html = "";
+            for(let i= 0; i< tasks.length; i++){
+                html += "<li>" + tasks[i] + " <button onclick='removeTask(" +i+ ");'>x</button></li>;"
+                document.getElementById("list").innerHTML = html;
+            }
+
+
+        }
+        // function to add task
+        function addTask(){
+            let taskInput = document.getElementById("task");
+        }
+    </script>
+</body>
+</html>
