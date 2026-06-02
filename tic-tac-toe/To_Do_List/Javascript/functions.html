@@ -243,5 +243,26 @@ document.getElementById("demo").innerHTML = x;
    }
    documnet.getElementById("myButton").addEventListener("click",displayDate);
 </script>
+
+
+
+<script>
+// Create 3 person objects
+const person1 = { name: "John" };
+const person2 = { name: "Paul" };
+const person3 = { name: "Ringo" };
+
+// Function to return a greeting
+function greet(greeting) {
+  return greeting + " " + this.name;
+}
+
+// Call greet with person3 as argument
+let message = greet.apply(person3, ["Hello"]);
+
+document.getElementById("demo").innerHTML = message;
+</script>
+
+
 </body>
 </html>
