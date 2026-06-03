@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIgn Up from</title>
+    <style>
+        input{
+            padding: 8px;
+            width:260px;
+            margin-bottom: 4px;
+        }
+        .error{
+            color:red;
+            margin: 0;
+        }
+        .ok{
+            color:green;
+            margin:0;
+
+        }
+        .field{
+            margin-bottom:12px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Sign Up Form</h1>
+    <form id="signupForm">
+   <div class="field">
+    <label>Name:</label><br>
+    <input id="text" type="text" value="" required="text" placeholder="Your Name">
+     <p id="nameError" class="error"></p>
+    </div>
+     <div class="field">
+    <label>Email:</label><br>
+    <input id="email" type="email" value="" required="email" placeholder="email">
+      <p id="emailError" class="error"></p>
+    </div>
+
+     <div class="field">
+    <label>Password:</label><br>
+    <input id="password" type="password" value="" required="password" placeholder="password">
+     <p id="passwordError" class="error"></p>
+    </div>
+
+     <div class="field">
+    <label>Confirm Password:</label><br>
+    <input id="password" type="passowrd" value="" required="" placeholder="confirm password">
+     <p id="confirmError" class="error"></p>
+    </div>
+   <p><button type="submit">Signup</button></p>
+    
+    </form>
+<p id=" result"></p>
+
+<script>
+    // create an object for each field
+    const form =document.ElementById("signupForm");
+    const nameInput =document.ElementById("name");
+    const emailInput =document.ElementById("email");
+    const passInput =document.ElementById("password");
+    const confirmInput =document.ElementById("confirm");
+    const nameError =document.ElementById("nameError");
+    const emailError =document.ElementById("emailError");
+    const passError =document.ElementById("passwordError");
+    const confirmError =document.ElementById("confirmError");
+    const result =document.ElementById("result");
+   
+   //Function to validate Form
+</script>
+</body>
+</html>
