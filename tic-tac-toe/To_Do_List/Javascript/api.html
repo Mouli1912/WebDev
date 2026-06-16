@@ -24,5 +24,9 @@
   "<br>Longitude: " + position.coords.longitude; 
         }
     </script>
+<script>
+    localStorage.setItem("name", "John");
+    document.getElementById("demo").innerHTML = localStorage.getItem("name");
+</script>
 </body>
 </html>
