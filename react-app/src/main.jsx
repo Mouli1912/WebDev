@@ -60,3 +60,16 @@ function Kwtohp (kw){
     </>
   );
  }
+
+ // camelCase Event Attributes
+
+ function Car(){
+  const myfunc = () =>{
+    alert("You clicked the button!");
+  };
+  return (
+    <>
+    <button onClick= {myfunc}>Click Me</button>
+    </>
+  );
+ }
