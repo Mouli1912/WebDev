@@ -5,6 +5,14 @@ class Counter extends Component {
         count: 0,
         tags: ['tag1', 'tag2', 'tag3']
     };
+    renderTags(){
+        if(this.state.tags.length === 0) return <p>There are no tags</p>;
+        return <ul>{this.state.tags.map(tag => <li key={tag}>{tag}</li>)}</ul>;
+    }
+   
+    handleIncrement(){
+        console.log('Increment Clicked', this);
+    }
     
    // render(){
    // let classes ="badge m-2 badge-;
@@ -14,9 +22,9 @@ class Counter extends Component {
         return (
             <div>
 <span className={classes}> {2+2}{this.fomateCount()}</span>
-<button className="btn btn-secondary m-2" onClick={() => this.setState({ count: this.state.count + 1 })}>Increment</button>
-<ul>{this.state.tags.map(tag => <li key={tag}>{tag}</li>)}</ul>
-    
+<button onclick={this.handleIncrement} className="btn btn-secondary m-2" >Increment</button>
+{this.state.tags.length === 0 && "please create a new tag!"}
+{this.renderTags()}
 
             </div>
           
