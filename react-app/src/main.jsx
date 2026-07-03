@@ -8,68 +8,68 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   </React.StrictMode>
 );
 
-const myElement = (
-  <ul>
-    <li>Apples</li>
-    <li>Bananas</li>
-    <li>Cherries</li>
-  </ul>
-);
+// const myElement = (
+//   <ul>
+//     <li>Apples</li>
+//     <li>Bananas</li>
+//     <li>Cherries</li>
+//   </ul>
+// );
 
-// react expression
+// // react expression
 
-function Car (){
-  return (
-  <>
- <h1>My Car</h1>
- <p>It has {218 * 1.36} horsepower</p>
+// function Car (){
+//   return (
+//   <>
+//  {/* <h1>My Car</h1>
+//  <p>It has {218 * 1.36} horsepower</p>
 
-  </>
-  );
+//   </>
+//   );
 
   
 
-}
+// } */}
 
-//function call
+// //function call
 
-function Kwtohp (kw){
-  return kw * 1.36;
+// // function Kwtohp (kw){
+// //   return kw * 1.36;
 
-}
- function Car(){
-  return (
-    <>
-    <h1> My car</h1>
-    <p>It has {Kwtohp(218)} horsepower</p>
-    </>
-  )
- }
+// // }
+// //  function Car(){
+// //   return (
+// //     <>
+// //     <h1> My car</h1>
+// //     <p>It has {Kwtohp(218)} horsepower</p>
+// //     </>
+// //   )
+// //  }
 
- // object properties
+//  // object properties
 
- function Car (){
-  const myobj = {
-    name:"Ford Mustang",
-    model:"500",
-    color:"Black"
-  };
-  return (
-    <>
-    <h1>My Car is {myobj.color} {myobj.name} {myobj.model}</h1>
-    </>
-  );
- }
+//  function Car (){
+//   const myobj = {
+//     name:"Ford Mustang",
+//     model:"500",
+//     color:"Black"
+//   };
+//   return (
+//     <>
+//     <h1>My Car is {myobj.color} {myobj.name} {myobj.model}</h1>
+//     </>
+//   );
+//  }
 
- // camelCase Event Attributes
+//  // camelCase Event Attributes
 
- function Car(){
-  const myfunc = () =>{
-    alert("You clicked the button!");
-  };
-  return (
-    <>
-    <button onClick= {myfunc}>Click Me</button>
-    </>
-  );
- }
+//  function Car(){
+//   const myfunc = () =>{
+//     alert("You clicked the button!");
+//   };
+//   return (
+//     <>
+//     <button onClick= {myfunc}>Click Me</button>
+//     </>
+//   );
+//  }

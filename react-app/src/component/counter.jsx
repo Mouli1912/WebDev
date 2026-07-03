@@ -10,9 +10,21 @@ class Counter extends Component {
         return <ul>{this.state.tags.map(tag => <li key={tag}>{tag}</li>)}</ul>;
     }
    
-    handleIncrement(){
-        console.log('Increment Clicked', this);
+    // constructor(){
+    //     super();
+    //     this.hnandleIncrement = this.handleIncrement.bind(this);
+    // }
+    handleIncrement = () =>{
+        
+        this.setState({count: this.state.count + 1});
+        console.log(product);
+        // obj.method();
+        //function();
     }
+    doHandleIncremenr= () => {
+
+        this.handleIncrement({id :1});
+    };
     
    // render(){
    // let classes ="badge m-2 badge-;
@@ -22,7 +34,7 @@ class Counter extends Component {
         return (
             <div>
 <span className={classes}> {2+2}{this.fomateCount()}</span>
-<button onclick={this.handleIncrement} className="btn btn-secondary m-2" >Increment</button>
+<button onclick={this.doHandleIncrement} className="btn btn-secondary m-2" >Increment</button>
 {this.state.tags.length === 0 && "please create a new tag!"}
 {this.renderTags()}
 
