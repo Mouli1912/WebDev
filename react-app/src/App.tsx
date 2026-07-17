@@ -24,6 +24,8 @@ import { useState } from "react";
 //   );
 // }
 
-function Fav
+function FavoriteColor (){
+  
+}
  export default App;
 
