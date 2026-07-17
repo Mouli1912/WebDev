@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "shadcn": "^4.13.0"
+  },
+  "dependencies": {
+    "@react-three/fiber": "^9.6.1",
+    "three": "^0.185.1"
+  }
+}
