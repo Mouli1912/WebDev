@@ -21,4 +21,4 @@ createRoot(document.getElementById('root')).render(
     <FavoriteColor/>
 );
 
-export default FavoriteColor;
+export default App;
