@@ -21,3 +21,12 @@ var createCounter= function(n){
  * counter() // 11
  * counter() // 12
  */
+
+// sleep problem 
+
+async function sleep(millis){
+    const promise = new Promise((resolve)=>{
+        setTimeout(resolve, millis);
+    });
+    await promise;
+}
