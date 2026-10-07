@@ -8,12 +8,12 @@ Array.prototype.last = function () {
     return this[this.length - 1];
 };
 
-//palindrome counter 
-var createCounter= function(n){
-    return function(){
+// Counter
+var createCounter = function (n) {
+    return function () {
         return n++;
     };
-}
+};
 
 /** 
  * const counter = createCounter(10)
@@ -24,9 +24,8 @@ var createCounter= function(n){
 
 // sleep problem 
 
-async function sleep(millis){
-    const promise = new Promise((resolve)=>{
+function sleep(millis) {
+    return new Promise((resolve) => {
         setTimeout(resolve, millis);
     });
-    await promise;
 }
