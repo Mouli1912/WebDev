@@ -40,3 +40,9 @@ var reduce = function(nums, fn, init) {
 
     return val;
 };
+
+var argumentsLength = function(...args) {
+   
+    return args.length;
+    
+};
