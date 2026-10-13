@@ -30,7 +30,7 @@ function sleep(millis) {
     });
 }
 
-
+//reduce pro
 var reduce = function(nums, fn, init) {
     let val = init;
 
@@ -40,14 +40,14 @@ var reduce = function(nums, fn, init) {
 
     return val;
 };
-
+// Arguments length
 var argumentsLength = function(...args) {
    
     return args.length;
     
 };
 
-
+// expect function
 var expect = function(val) {
     return {
         toBe: function(otherVal) {
