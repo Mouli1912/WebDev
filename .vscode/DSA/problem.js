@@ -46,3 +46,24 @@ var argumentsLength = function(...args) {
     return args.length;
     
 };
+
+
+var expect = function(val) {
+    return {
+        toBe: function(otherVal) {
+            if (val === otherVal) {
+                return true;
+            } else {
+                throw new Error("Not Equal");
+            }
+        },
+
+        notToBe: function(otherVal) {
+            if (val !== otherVal) {
+                return true;
+            } else {
+                throw new Error("Equal");
+            }
+        }
+    };
+};
