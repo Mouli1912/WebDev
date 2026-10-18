@@ -31,7 +31,7 @@ function sleep(millis) {
 }
 
 //reduce pro
-var reduce = function(nums, fn, init) {
+var reduce = function (nums, fn, init) {
     let val = init;
 
     for (let i = 0; i < nums.length; i++) {
@@ -41,16 +41,16 @@ var reduce = function(nums, fn, init) {
     return val;
 };
 // Arguments length
-var argumentsLength = function(...args) {
-   
+var argumentsLength = function (...args) {
+
     return args.length;
-    
+
 };
 
 // expect function
-var expect = function(val) {
+var expect = function (val) {
     return {
-        toBe: function(otherVal) {
+        toBe: function (otherVal) {
             if (val === otherVal) {
                 return true;
             } else {
@@ -58,7 +58,7 @@ var expect = function(val) {
             }
         },
 
-        notToBe: function(otherVal) {
+        notToBe: function (otherVal) {
             if (val !== otherVal) {
                 return true;
             } else {
@@ -68,7 +68,7 @@ var expect = function(val) {
     };
 };
 
-var cancellable = function(fn, args, t) {
+var cancellable = function (fn, args, t) {
     let timer = setTimeout(() => {
         fn(...args);
     }, t);
@@ -77,7 +77,7 @@ var cancellable = function(fn, args, t) {
 };
 
 
-var filter = function(arr, fn) {
+var filter = function (arr, fn) {
     let result = [];
 
     for (let i = 0; i < arr.length; i++) {
@@ -88,3 +88,13 @@ var filter = function(arr, fn) {
 
     return result;
 };
+
+// object.keys return array of a given object's own enumerable property names, iterated in the same order that a normal loop would.
+var isEmpty = function (obj) {
+    if (object.keys(obj).length === 0) {//return (obj === null || Object.keys(obj).length === 0);
+        return true;
+    } else {
+        return false;
+    }
+
+}
